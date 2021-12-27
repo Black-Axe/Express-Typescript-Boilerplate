@@ -2,6 +2,8 @@ import bodyparser from 'body-parser';
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import initRouter from './routes/router';
+import connectDB from './database/database';
 
 
 dotenv.config();
@@ -11,9 +13,9 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.set('port', process.env.PORT || 5000);
 
-app.get('/', (req, res) => {
-      res.send('Hello we!');
-});
+//OPTIONAL Mongodb
+//connectDB();
+initRouter(app);
 
 
 app.listen(app.get('port'), () => {
