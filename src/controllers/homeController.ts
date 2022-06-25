@@ -1,5 +1,5 @@
-import {Request, Response} from 'express';
+import { Request, Response } from 'express'
 
 export async function home(req: Request, res: Response) {
-    res.send('Hello World!');
+  res.status(200).send('Hello World!')
 }
