@@ -13,8 +13,7 @@
       "*": ["node_modules/*", "src/types/*"],
       "@/*": ["./src/*"]
     },
+    "types": ["@types/jest"]
   },
-  "include": [
-    "src/**/*",
-  ]
+  "include": ["src/**/*"]
 }
