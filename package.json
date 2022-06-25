@@ -46,7 +46,7 @@
     "compile": "run-s clean tsc start",
     "dev": "nodemon",
     "build": "run-s clean tsc",
-    "lint": "eslint src/ && prettier --check src/",
+    "lint": "eslint src/",
     "lint:fix": "eslint --cache --fix src/ && prettier --write src/",
     "test": "jest",
     "prepare": "husky install"
