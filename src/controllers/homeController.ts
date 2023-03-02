@@ -1,5 +1,3 @@
-import {Request, Response} from 'express';
+import { Request, Response } from 'express'
 
-export async function home(req: Request, res: Response) {
-    res.send('Hello World!');
-}
+export default (req: Request, res: Response) => res.send('Hello World!')
