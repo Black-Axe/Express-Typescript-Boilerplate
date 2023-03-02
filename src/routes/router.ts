@@ -1,10 +1,8 @@
-import express from 'express';
-import { home } from '@/controllers/homeController';
+import express from 'express'
+import home from '@/controllers/homeController'
 
-const router = express.Router();
+const router = express.Router()
 
-router.get('/', home);
+router.get('/', home)
 
-export default function initRouter(app: express.Application) {
-  app.use(router);
-}
+export default (app: express.Application) => app.use(router)
