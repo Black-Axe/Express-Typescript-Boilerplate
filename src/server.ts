@@ -17,7 +17,4 @@ app.use(bodyparser.urlencoded({ extended: true }))
 // connectDB();
 initRouter(app)
 
-app.listen(port, () => {
-  console.log(`🚀  App is running at http://localhost:${port} in``, app.get('env'), 'mode')
-  console.log('  Press CTRL-C to stop\n')
-})
+app.listen(port, () => { console.log(`Server running on port ${port}`) })
