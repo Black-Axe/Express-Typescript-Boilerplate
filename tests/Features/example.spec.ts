@@ -1,5 +1,5 @@
 import { mockReq, mockRes } from 'sinon-express-mock'
-import { home } from '../../src/controllers/HomeController'
+import { home } from '../../src/controllers/home-controller'
 
 describe('HomeController', () => {
   test('should home controller return message', async () => {
