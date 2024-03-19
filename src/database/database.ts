@@ -1,6 +1,6 @@
 import { connect } from 'mongoose'
-
-const monURI = 'mongodb://localhost:27017/express-typescript-demo'
+// eslint-disable-next-line prefer-const
+let monURI = 'mongodb://localhost:27017/express-typescript-demo'
 
 const connectDB = async () => {
   try {
